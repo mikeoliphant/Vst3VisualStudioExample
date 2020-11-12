@@ -30,7 +30,7 @@ tresult PLUGIN_API VST3Test::initialize(FUnknown* context)
 	addAudioInput(STR16("Mono In"), SpeakerArr::kMono);
 	addAudioOutput(STR16("Mono Out"), SpeakerArr::kMono);
 
-	//---create Event In/Out busses (1 bus with only 1 channel)------
+	// Set up a MIDI event intput as an example, even though we aren't going to use it
 	addEventInput(STR16("Event In"), 1);
 
 	return kResultOk;
@@ -70,6 +70,8 @@ tresult PLUGIN_API VST3Test::getState(IBStream* state)
 
 tresult PLUGIN_API VST3Test::setBusArrangements(SpeakerArrangement* inputs, int32 numIns, SpeakerArrangement* outputs, int32 numOuts)
 {
+	// We should be ok with any arrangement
+
 	return kResultOk;
 }
 
@@ -186,7 +188,7 @@ tresult PLUGIN_API VST3Test::process(ProcessData& data)
 
 			for (uint32 sample = 0; sample < data.numSamples; sample++)
 			{
-				outSamples[i] = inSamples[i] * gain;
+				outSamples[sample] = inSamples[sample] * gain;
 			}
 		}
 		else
@@ -196,7 +198,7 @@ tresult PLUGIN_API VST3Test::process(ProcessData& data)
 
 			for (uint32 sample = 0; sample < data.numSamples; sample++)
 			{
-				outSamples[i] = inSamples[i] * gain;
+				outSamples[sample] = inSamples[sample] * gain;
 			}
 		}
 	}
