@@ -29,10 +29,10 @@
     <ClCompile Include="VST3TestController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Share\3rdPartyCode\vst3sdk\public.sdk\source\main\dllmain.cpp">
+    <ClCompile Include="VST3TestFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="VST3TestFactory.cpp">
+    <ClCompile Include="..\vst3sdk\public.sdk\source\main\dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
