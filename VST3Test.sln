@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sdk", "vstbuild\public.sdk\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pluginterfaces", "vstbuild\pluginterfaces\pluginterfaces.vcxproj", "{15E18901-0AB8-3018-8B8C-70104EA9E077}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vstsdk", "vstsdk", "{A587EE4E-41E1-4FFA-963E-8E53DFA75605}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "base", "vstbuild\base\base.vcxproj", "{E202082C-4778-3E9B-A5E6-848ED152A1D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -37,9 +41,20 @@ Global
 		{15E18901-0AB8-3018-8B8C-70104EA9E077}.Release|x64.ActiveCfg = Release|x64
 		{15E18901-0AB8-3018-8B8C-70104EA9E077}.Release|x64.Build.0 = Release|x64
 		{15E18901-0AB8-3018-8B8C-70104EA9E077}.Release|x86.ActiveCfg = Release|x64
+		{E202082C-4778-3E9B-A5E6-848ED152A1D4}.Debug|x64.ActiveCfg = Debug|x64
+		{E202082C-4778-3E9B-A5E6-848ED152A1D4}.Debug|x64.Build.0 = Debug|x64
+		{E202082C-4778-3E9B-A5E6-848ED152A1D4}.Debug|x86.ActiveCfg = Debug|x64
+		{E202082C-4778-3E9B-A5E6-848ED152A1D4}.Release|x64.ActiveCfg = Release|x64
+		{E202082C-4778-3E9B-A5E6-848ED152A1D4}.Release|x64.Build.0 = Release|x64
+		{E202082C-4778-3E9B-A5E6-848ED152A1D4}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F095D436-A0DD-3462-A025-4D2D28FF7C16} = {A587EE4E-41E1-4FFA-963E-8E53DFA75605}
+		{15E18901-0AB8-3018-8B8C-70104EA9E077} = {A587EE4E-41E1-4FFA-963E-8E53DFA75605}
+		{E202082C-4778-3E9B-A5E6-848ED152A1D4} = {A587EE4E-41E1-4FFA-963E-8E53DFA75605}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51036AE1-C597-4F65-A3B6-CA31ECD3BD75}
