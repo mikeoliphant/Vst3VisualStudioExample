@@ -170,15 +170,15 @@
     <ClCompile Include="VST3TestController.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Share\3rdPartyCode\vst3sdk\build\pluginterfaces\pluginterfaces.vcxproj">
-      <Project>{f12a45e1-b3fc-333a-9ea7-089822d87ed5}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Share\3rdPartyCode\vst3sdk\build\public.sdk\sdk.vcxproj">
-      <Project>{f5a56914-ba67-3a58-90d8-b9c04f291b8e}</Project>
-    </ProjectReference>
+    <None Include="VST3Test.def" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="VST3Test.def" />
+    <ProjectReference Include="..\vstbuild\pluginterfaces\pluginterfaces.vcxproj">
+      <Project>{15e18901-0ab8-3018-8b8c-70104ea9e077}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vstbuild\public.sdk\sdk.vcxproj">
+      <Project>{f095d436-a0dd-3462-a025-4d2d28ff7c16}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
