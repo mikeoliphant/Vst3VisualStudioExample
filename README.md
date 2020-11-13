@@ -15,8 +15,6 @@ cd Vst3VisualStudioExample
 mkdir vstbuild
 cd vstbuild
 cmake.exe -G "Visual Studio 16 2019" -A x64 ../vst3sdk
-cmake --build . --config Debug
-cmake --build . --config Release
 ```
 
 Then you can load "VST3Test.sln" in Visual Studio and build the plugin.
