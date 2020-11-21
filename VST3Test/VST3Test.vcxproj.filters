@@ -32,9 +32,6 @@
     <ClCompile Include="VST3TestFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\vst3sdk\public.sdk\source\main\dllmain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="VST3Test.def">

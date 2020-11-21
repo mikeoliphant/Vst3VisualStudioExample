@@ -164,7 +164,6 @@
     <ClInclude Include="VST3TestController.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\vst3sdk\public.sdk\source\main\dllmain.cpp" />
     <ClCompile Include="VST3TestFactory.cpp" />
     <ClCompile Include="VST3Test.cpp" />
     <ClCompile Include="VST3TestController.cpp" />
